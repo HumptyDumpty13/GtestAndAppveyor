@@ -7,5 +7,5 @@ build_script:
     cd build
 
     cmake -G "MinGW Makefiles" -DCMAKE_SH=SH-NOTFOUND ..
-
+    
     cmake --build .
