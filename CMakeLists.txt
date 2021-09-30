@@ -11,7 +11,6 @@ include_directories(SYSTEM
     ${gtest_SOURCE_DIR} 
     ${gtest_SOURCE_DIR}/include) 
  
-# Link runTests with what we want to test and the GTest and pthread library 
 add_executable(runTests tests.cpp) 
  
 target_link_libraries( 
