@@ -25,4 +25,4 @@ set_target_properties(
     CXX_STANDARD_REQUIRED ON 
 )
 
-set(DCMAKE_SH="CMAKE_SH-NOTFOUND")
+#set(DCMAKE_SH="CMAKE_SH-NOTFOUND")
