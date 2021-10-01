@@ -7,7 +7,7 @@ build_script:
 
     cd build
 
-    cmake -G "MinGW Makefiles"  ..
+    cmake C:\projects\gtestandappveyor -G "MinGW Makefiles"
     
     cmake --build .
 #cmake -G "MinGW Makefiles" -DCMAKE_SH=SH-NOTFOUND ..
