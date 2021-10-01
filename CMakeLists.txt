@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.5) 
 
+set(DCMAKE_SH="CMAKE_SH-NOTFOUND")
+
 project(IsPalindrome)
  
 add_subdirectory( 
