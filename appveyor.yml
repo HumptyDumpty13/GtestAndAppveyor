@@ -1,6 +1,6 @@
 image: Visual Studio 2015
 #clone_folder: D:\VScode_projects\GtestAndAppveyor
-clone_folder: D:\vscodeprojects\gtestandappveyor
+clone_folder: D:\vscode_projects\gtestandappveyor
 build_script:
 - cmd: >-
     mkdir build
