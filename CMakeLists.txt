@@ -7,8 +7,8 @@ set(DCMAKE_SH="CMAKE_SH-NOTFOUND")
 project(IsPalindrome)
  
 add_subdirectory( 
-    #"${CMAKE_CURRENT_SOURCE_DIR}/googletest" 
-    googletest  
+    ${CMAKE_CURRENT_SOURCE_DIR}/googletest
+    #googletest  
 ) 
  
 include_directories(#SYSTEM 
