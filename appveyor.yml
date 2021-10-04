@@ -5,8 +5,6 @@ install:
 build_script:
 - cmd: >-
     echo %PATH%
-
-    git submodule update --init --recursive
     
     mkdir build
 
@@ -17,3 +15,5 @@ build_script:
     cmake --build .
 test_script:
     - '%APPVEYOR_BUILD_FOLDER%\build\runTests.exe'
+
+ #git submodule update --init --recursive   
