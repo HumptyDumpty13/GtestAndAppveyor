@@ -15,7 +15,7 @@ build_script:
 
     cmake -G "MinGW Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
     
-    cmake --build  -DGTEST_OS_WINDOWS_MINGW=1.
+    cmake --build  -DGTEST_OS_WINDOWS_MINGW=1 .
 #where gcc   
 #cmake -G "MinGW Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
 #cmake -G "MinGW Makefiles" -DCMAKE_IGNORE_PATH="C:/Program Files/Git/usr/bin" .. && mingw32-make
