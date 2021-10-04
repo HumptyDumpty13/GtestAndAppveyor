@@ -34,6 +34,11 @@ cmake_minimum_required(VERSION 3.12) # version can be different
 
 project(IsPalindrome) #name of your project
 
+if(NOT CYGWIN)
+  set(CMAKE_CXX_EXTENSIONS ON)
+  message("Extensions: ${CMAKE_CXX_EXTENSIONS}")
+endif()
+
 add_subdirectory(googletest) # add googletest subdirectory
 
 include_directories(${gtest_SOURCE_DIR}/include
