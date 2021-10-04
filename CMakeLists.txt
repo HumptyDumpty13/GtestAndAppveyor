@@ -36,7 +36,8 @@ project(IsPalindrome) #name of your project
 
 add_subdirectory(googletest) # add googletest subdirectory
 
-include_directories(googletest/include) # this is so we can #include <gtest/gtest.h>
+include_directories(${gtest_SOURCE_DIR}/include
+ ${gtest_SOURCE_DIR}) # this is so we can #include <gtest/gtest.h>
 
 add_executable(runTests tests.cpp) # add this executable
 
