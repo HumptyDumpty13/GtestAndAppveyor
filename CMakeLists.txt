@@ -40,7 +40,7 @@ include_directories(googletest/include) # this is so we can #include <gtest/gtes
 
 add_executable(runTests tests.cpp) # add this executable
 
-target_link_libraries(mytests PRIVATE gtest) # link google test to this executable
+target_link_libraries(runTests PRIVATE gtest) # link google test to this executable
 
 set_target_properties( 
      runTests PROPERTIES  
