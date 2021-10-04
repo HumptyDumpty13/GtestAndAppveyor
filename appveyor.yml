@@ -13,7 +13,7 @@ build_script:
 
     cd build
 
-    cmake -G "MinGW Makefiles" -DGTEST_OS_WINDOWS_MINGW=1 -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
+    cmake -G "MinGW Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
     
     cmake --build .
 #where gcc   
