@@ -15,5 +15,5 @@ build_script:
     cmake -G "MinGW Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
 
     cmake --build .
- test_script:
+test_script:
     - '%APPVEYOR_BUILD_FOLDER%\build\runTests.exe'
