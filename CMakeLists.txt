@@ -8,7 +8,7 @@ project(IsPalindrome)
  
 add_subdirectory( 
     ${CMAKE_CURRENT_SOURCE_DIR}/googletest
-    #googletest  
+    googletest  
 ) 
  
 include_directories(#SYSTEM 
