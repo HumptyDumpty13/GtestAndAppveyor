@@ -11,8 +11,8 @@ add_subdirectory(
     googletest  
 ) 
  
-include_directories(SYSTEM 
-    ${gtest_SOURCE_DIR} 
+include_directories(#SYSTEM 
+    #${gtest_SOURCE_DIR} 
     ${gtest_SOURCE_DIR}/include) 
  
 add_executable(runTests tests.cpp) 
