@@ -6,8 +6,7 @@ image: Visual Studio 2015
 #- set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
 build_script:
 - cmd: >-
-    where gcc
-    
+
     echo %PATH%
 
     mkdir build
@@ -17,5 +16,6 @@ build_script:
     cmake -G "MinGW Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
     
     cmake --build .
+#where gcc   
 #cmake -G "MinGW Makefiles" -DCMAKE_SH=SH-NOTFOUND ..
 #cmake -G "MinGW Makefiles" -DCMAKE_IGNORE_PATH="C:/Program Files/Git/usr/bin" ..
