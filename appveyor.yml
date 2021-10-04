@@ -1,5 +1,5 @@
 image: Visual Studio 2015
-#clone_folder: C:\projects\gtestandappveyor
+clone_folder: C:\projects\gtestandappveyor
 install:
 - set PATH=c:\MinGW\bin;%PATH%
 #- set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
