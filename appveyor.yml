@@ -6,6 +6,8 @@ image: Visual Studio 2015
 #- set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
 build_script:
 - cmd: >-
+    where gcc
+    
     echo %PATH%
 
     mkdir build
