@@ -6,7 +6,7 @@ TEST(IsPalindromeTest, True) {
     ASSERT_TRUE(IsPalindrome("c")); 
     ASSERT_TRUE(IsPalindrome("madam")); 
     ASSERT_TRUE(IsPalindrome(" level ")); 
-    ASSERT_TRUE(IsPalindrome(" 7777")); 
+    ASSERT_TRUE(IsPalindrome("7777")); 
 } 
  
 TEST(IsPalindromeTest, False) { 
