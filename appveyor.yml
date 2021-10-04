@@ -6,6 +6,8 @@ install:
 build_script:
 - cmd: >-
     echo %PATH%
+
+    git submodule update --init --recursive
     
     ls
 
