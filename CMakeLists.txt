@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5) 
 
 set(DCMAKE_SH="CMAKE_SH-NOTFOUND")
+set(CMAKE_C_COMPILER C:\MinGW\bin\gcc.exe)
+set(CMAKE_CXX_COMPILER C:\MinGW\bin\g++.exe)
 
 project(IsPalindrome)
  
