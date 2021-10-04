@@ -8,13 +8,11 @@ build_script:
 - cmd: >-
     echo %PATH%
 
-    where gcc
-
     mkdir build
 
     cd build
 
-    - cmake -G "MinGW Makefiles" -DCMAKE_IGNORE_PATH="C:/Program Files/Git/usr/bin" .. && mingw32-make
+    cmake -G "MinGW Makefiles" -DCMAKE_IGNORE_PATH="C:/Program Files/Git/usr/bin" .. && mingw32-make
     
     cmake --build .
 #where gcc   
