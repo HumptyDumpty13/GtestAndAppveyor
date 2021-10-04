@@ -2,25 +2,18 @@ image: Visual Studio 2015
 clone_folder: C:\projects\gtestandappveyor
 install:
 - set PATH=c:\msys64\mingw64\bin;%PATH%
-#- set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
 build_script:
 - cmd: >-
     echo %PATH%
 
     git submodule update --init --recursive
     
-    ls
-
     mkdir build
 
     cd build
 
     cmake -G "MinGW Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
 
-    ls
-    
     cmake --build .
-#where gcc   
-#cmake -G "MinGW Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
-#cmake -G "MinGW Makefiles" -DCMAKE_IGNORE_PATH="C:/Program Files/Git/usr/bin" .. && mingw32-make
-#git submodule update --init --recursive
+ test_script:
+    - '%APPVEYOR_BUILD_FOLDER%\build\runTests.exe'
