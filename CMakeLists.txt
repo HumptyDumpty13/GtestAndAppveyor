@@ -32,12 +32,12 @@
 
 cmake_minimum_required(VERSION 3.12) # version can be different
 
-project(IsPalindrome) #name of your project
-
 if(NOT CYGWIN)
   set(CMAKE_CXX_EXTENSIONS ON)
   message("Extensions: ${CMAKE_CXX_EXTENSIONS}")
 endif()
+
+project(IsPalindrome) #name of your project
 
 add_subdirectory(googletest) # add googletest subdirectory
 
@@ -48,8 +48,8 @@ add_executable(runTests tests.cpp) # add this executable
 
 target_link_libraries(runTests PRIVATE gtest) # link google test to this executable
 
-set_target_properties( 
-     runTests PROPERTIES  
-     CXX_STANDARD 17 
-     CXX_STANDARD_REQUIRED ON 
-)
+#set_target_properties( 
+#     runTests PROPERTIES  
+#     CXX_STANDARD 17 
+#     CXX_STANDARD_REQUIRED ON 
+#)
