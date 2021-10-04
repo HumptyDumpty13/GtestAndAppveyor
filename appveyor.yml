@@ -12,9 +12,9 @@ build_script:
 
     cd build
 
-    cmake -G "MinGW Makefiles" -DCMAKE_IGNORE_PATH="C:/Program Files/Git/usr/bin" .. && mingw32-make
+    cmake -G "MinGW Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
     
     cmake --build .
 #where gcc   
 #cmake -G "MinGW Makefiles" -DCMAKE_SH="CMAKE_SH-NOTFOUND" ..
-#cmake -G "MinGW Makefiles" -DCMAKE_IGNORE_PATH="C:/Program Files/Git/usr/bin" ..
+#cmake -G "MinGW Makefiles" -DCMAKE_IGNORE_PATH="C:/Program Files/Git/usr/bin" .. && mingw32-make
